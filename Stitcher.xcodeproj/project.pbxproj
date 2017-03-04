@@ -1,0 +1,671 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		006EAF4E1E6B1F3500EF9E1A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006EAF4D1E6B1F3500EF9E1A /* AVFoundation.framework */; };
+		99FA265F85AF7B18CBC3DFE5 /* libPods-Stitcher.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A07DEA67E4AF51151D292AB0 /* libPods-Stitcher.a */; };
+		DD518FFA1E5BDA6500230D6C /* FileUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DD518FF91E5BDA6500230D6C /* FileUtils.m */; };
+		DD5C9DFE1E5A8F01002A0525 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5C9DFD1E5A8F01002A0525 /* main.m */; };
+		DD5C9E011E5A8F01002A0525 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5C9E001E5A8F01002A0525 /* AppDelegate.m */; };
+		DD5C9E041E5A8F01002A0525 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = DD5C9E031E5A8F01002A0525 /* ViewController.mm */; };
+		DD5C9E071E5A8F01002A0525 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD5C9E051E5A8F01002A0525 /* Main.storyboard */; };
+		DD5C9E091E5A8F01002A0525 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD5C9E081E5A8F01002A0525 /* Assets.xcassets */; };
+		DD5C9E0C1E5A8F01002A0525 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD5C9E0A1E5A8F01002A0525 /* LaunchScreen.storyboard */; };
+		DD5C9E171E5A8F01002A0525 /* StitcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5C9E161E5A8F01002A0525 /* StitcherTests.m */; };
+		DD5C9E221E5A8F01002A0525 /* StitcherUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5C9E211E5A8F01002A0525 /* StitcherUITests.m */; };
+		DD5C9E331E5A8F58002A0525 /* SRStitcher.mm in Sources */ = {isa = PBXBuildFile; fileRef = DD5C9E311E5A8F58002A0525 /* SRStitcher.mm */; };
+		DD5C9E341E5A9269002A0525 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5C9E2F1E5A8F32002A0525 /* opencv2.framework */; };
+		DD5C9E371E5A942D002A0525 /* UIImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = DD5C9E361E5A942D002A0525 /* UIImage+OpenCV.mm */; };
+		DD5C9E3B1E5A94DB002A0525 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5C9E3A1E5A94DB002A0525 /* CoreMedia.framework */; };
+		DD5C9E441E5AC556002A0525 /* convertTool.mm in Sources */ = {isa = PBXBuildFile; fileRef = DD5C9E431E5AC556002A0525 /* convertTool.mm */; };
+		DD5C9E4A1E5AE4AE002A0525 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5C9E491E5AE4AE002A0525 /* AssetsLibrary.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD5C9E131E5A8F01002A0525 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD5C9DF11E5A8F01002A0525 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD5C9DF81E5A8F01002A0525;
+			remoteInfo = Stitcher;
+		};
+		DD5C9E1E1E5A8F01002A0525 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD5C9DF11E5A8F01002A0525 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD5C9DF81E5A8F01002A0525;
+			remoteInfo = Stitcher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		006EAF4D1E6B1F3500EF9E1A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5B86690093F16E0B8B491E4A /* Pods-Stitcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stitcher.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stitcher/Pods-Stitcher.debug.xcconfig"; sourceTree = "<group>"; };
+		A07DEA67E4AF51151D292AB0 /* libPods-Stitcher.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Stitcher.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD518FF81E5BDA6500230D6C /* FileUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileUtils.h; sourceTree = "<group>"; };
+		DD518FF91E5BDA6500230D6C /* FileUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileUtils.m; sourceTree = "<group>"; };
+		DD5C9DF91E5A8F01002A0525 /* Stitcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stitcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD5C9DFD1E5A8F01002A0525 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DD5C9DFF1E5A8F01002A0525 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DD5C9E001E5A8F01002A0525 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DD5C9E021E5A8F01002A0525 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DD5C9E031E5A8F01002A0525 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		DD5C9E061E5A8F01002A0525 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD5C9E081E5A8F01002A0525 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD5C9E0B1E5A8F01002A0525 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DD5C9E0D1E5A8F01002A0525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD5C9E121E5A8F01002A0525 /* StitcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StitcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD5C9E161E5A8F01002A0525 /* StitcherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StitcherTests.m; sourceTree = "<group>"; };
+		DD5C9E181E5A8F01002A0525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD5C9E1D1E5A8F01002A0525 /* StitcherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StitcherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD5C9E211E5A8F01002A0525 /* StitcherUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StitcherUITests.m; sourceTree = "<group>"; };
+		DD5C9E231E5A8F01002A0525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD5C9E2F1E5A8F32002A0525 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		DD5C9E311E5A8F58002A0525 /* SRStitcher.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SRStitcher.mm; sourceTree = "<group>"; };
+		DD5C9E321E5A8F58002A0525 /* SRStitcher.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SRStitcher.hpp; sourceTree = "<group>"; };
+		DD5C9E351E5A942D002A0525 /* UIImage+OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OpenCV.h"; sourceTree = "<group>"; };
+		DD5C9E361E5A942D002A0525 /* UIImage+OpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+OpenCV.mm"; sourceTree = "<group>"; };
+		DD5C9E381E5A943E002A0525 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		DD5C9E3A1E5A94DB002A0525 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		DD5C9E421E5AC556002A0525 /* convertTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convertTool.h; sourceTree = "<group>"; };
+		DD5C9E431E5AC556002A0525 /* convertTool.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = convertTool.mm; sourceTree = "<group>"; };
+		DD5C9E491E5AE4AE002A0525 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		F715A87E2B78BF3A37842284 /* Pods-Stitcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stitcher.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stitcher/Pods-Stitcher.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD5C9DF61E5A8F01002A0525 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				006EAF4E1E6B1F3500EF9E1A /* AVFoundation.framework in Frameworks */,
+				DD5C9E4A1E5AE4AE002A0525 /* AssetsLibrary.framework in Frameworks */,
+				DD5C9E3B1E5A94DB002A0525 /* CoreMedia.framework in Frameworks */,
+				DD5C9E341E5A9269002A0525 /* opencv2.framework in Frameworks */,
+				99FA265F85AF7B18CBC3DFE5 /* libPods-Stitcher.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD5C9E0F1E5A8F01002A0525 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD5C9E1A1E5A8F01002A0525 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0836CD5D47EB927E35D584F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B86690093F16E0B8B491E4A /* Pods-Stitcher.debug.xcconfig */,
+				F715A87E2B78BF3A37842284 /* Pods-Stitcher.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DD5C9DF01E5A8F01002A0525 = {
+			isa = PBXGroup;
+			children = (
+				DD5C9DFB1E5A8F01002A0525 /* Stitcher */,
+				DD5C9E151E5A8F01002A0525 /* StitcherTests */,
+				DD5C9E201E5A8F01002A0525 /* StitcherUITests */,
+				DD5C9DFA1E5A8F01002A0525 /* Products */,
+				DD5C9E391E5A94DB002A0525 /* Frameworks */,
+				0836CD5D47EB927E35D584F8 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		DD5C9DFA1E5A8F01002A0525 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD5C9DF91E5A8F01002A0525 /* Stitcher.app */,
+				DD5C9E121E5A8F01002A0525 /* StitcherTests.xctest */,
+				DD5C9E1D1E5A8F01002A0525 /* StitcherUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD5C9DFB1E5A8F01002A0525 /* Stitcher */ = {
+			isa = PBXGroup;
+			children = (
+				DD5C9DFF1E5A8F01002A0525 /* AppDelegate.h */,
+				DD5C9E001E5A8F01002A0525 /* AppDelegate.m */,
+				DD5C9E021E5A8F01002A0525 /* ViewController.h */,
+				DD5C9E031E5A8F01002A0525 /* ViewController.mm */,
+				DD5C9E051E5A8F01002A0525 /* Main.storyboard */,
+				DD5C9E351E5A942D002A0525 /* UIImage+OpenCV.h */,
+				DD5C9E361E5A942D002A0525 /* UIImage+OpenCV.mm */,
+				DD5C9E2F1E5A8F32002A0525 /* opencv2.framework */,
+				DD5C9E081E5A8F01002A0525 /* Assets.xcassets */,
+				DD5C9E0A1E5A8F01002A0525 /* LaunchScreen.storyboard */,
+				DD5C9E0D1E5A8F01002A0525 /* Info.plist */,
+				DD5C9DFC1E5A8F01002A0525 /* Supporting Files */,
+				DD5C9E311E5A8F58002A0525 /* SRStitcher.mm */,
+				DD5C9E321E5A8F58002A0525 /* SRStitcher.hpp */,
+				DD5C9E381E5A943E002A0525 /* PrefixHeader.pch */,
+				DD5C9E421E5AC556002A0525 /* convertTool.h */,
+				DD5C9E431E5AC556002A0525 /* convertTool.mm */,
+				DD518FF81E5BDA6500230D6C /* FileUtils.h */,
+				DD518FF91E5BDA6500230D6C /* FileUtils.m */,
+			);
+			path = Stitcher;
+			sourceTree = "<group>";
+		};
+		DD5C9DFC1E5A8F01002A0525 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD5C9DFD1E5A8F01002A0525 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD5C9E151E5A8F01002A0525 /* StitcherTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD5C9E161E5A8F01002A0525 /* StitcherTests.m */,
+				DD5C9E181E5A8F01002A0525 /* Info.plist */,
+			);
+			path = StitcherTests;
+			sourceTree = "<group>";
+		};
+		DD5C9E201E5A8F01002A0525 /* StitcherUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DD5C9E211E5A8F01002A0525 /* StitcherUITests.m */,
+				DD5C9E231E5A8F01002A0525 /* Info.plist */,
+			);
+			path = StitcherUITests;
+			sourceTree = "<group>";
+		};
+		DD5C9E391E5A94DB002A0525 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				006EAF4D1E6B1F3500EF9E1A /* AVFoundation.framework */,
+				DD5C9E491E5AE4AE002A0525 /* AssetsLibrary.framework */,
+				DD5C9E3A1E5A94DB002A0525 /* CoreMedia.framework */,
+				A07DEA67E4AF51151D292AB0 /* libPods-Stitcher.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD5C9DF81E5A8F01002A0525 /* Stitcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD5C9E261E5A8F01002A0525 /* Build configuration list for PBXNativeTarget "Stitcher" */;
+			buildPhases = (
+				0B2533454C3B91D5A5672DA9 /* [CP] Check Pods Manifest.lock */,
+				DD5C9DF51E5A8F01002A0525 /* Sources */,
+				DD5C9DF61E5A8F01002A0525 /* Frameworks */,
+				DD5C9DF71E5A8F01002A0525 /* Resources */,
+				470E4C76313D819196AF837C /* [CP] Embed Pods Frameworks */,
+				92AA7A1BB91FA9A663D4B2A8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stitcher;
+			productName = Stitcher;
+			productReference = DD5C9DF91E5A8F01002A0525 /* Stitcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD5C9E111E5A8F01002A0525 /* StitcherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD5C9E291E5A8F01002A0525 /* Build configuration list for PBXNativeTarget "StitcherTests" */;
+			buildPhases = (
+				DD5C9E0E1E5A8F01002A0525 /* Sources */,
+				DD5C9E0F1E5A8F01002A0525 /* Frameworks */,
+				DD5C9E101E5A8F01002A0525 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD5C9E141E5A8F01002A0525 /* PBXTargetDependency */,
+			);
+			name = StitcherTests;
+			productName = StitcherTests;
+			productReference = DD5C9E121E5A8F01002A0525 /* StitcherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DD5C9E1C1E5A8F01002A0525 /* StitcherUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD5C9E2C1E5A8F01002A0525 /* Build configuration list for PBXNativeTarget "StitcherUITests" */;
+			buildPhases = (
+				DD5C9E191E5A8F01002A0525 /* Sources */,
+				DD5C9E1A1E5A8F01002A0525 /* Frameworks */,
+				DD5C9E1B1E5A8F01002A0525 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD5C9E1F1E5A8F01002A0525 /* PBXTargetDependency */,
+			);
+			name = StitcherUITests;
+			productName = StitcherUITests;
+			productReference = DD5C9E1D1E5A8F01002A0525 /* StitcherUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD5C9DF11E5A8F01002A0525 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = sirui;
+				TargetAttributes = {
+					DD5C9DF81E5A8F01002A0525 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					DD5C9E111E5A8F01002A0525 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DD5C9DF81E5A8F01002A0525;
+					};
+					DD5C9E1C1E5A8F01002A0525 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DD5C9DF81E5A8F01002A0525;
+					};
+				};
+			};
+			buildConfigurationList = DD5C9DF41E5A8F01002A0525 /* Build configuration list for PBXProject "Stitcher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD5C9DF01E5A8F01002A0525;
+			productRefGroup = DD5C9DFA1E5A8F01002A0525 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD5C9DF81E5A8F01002A0525 /* Stitcher */,
+				DD5C9E111E5A8F01002A0525 /* StitcherTests */,
+				DD5C9E1C1E5A8F01002A0525 /* StitcherUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD5C9DF71E5A8F01002A0525 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD5C9E0C1E5A8F01002A0525 /* LaunchScreen.storyboard in Resources */,
+				DD5C9E091E5A8F01002A0525 /* Assets.xcassets in Resources */,
+				DD5C9E071E5A8F01002A0525 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD5C9E101E5A8F01002A0525 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD5C9E1B1E5A8F01002A0525 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B2533454C3B91D5A5672DA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		470E4C76313D819196AF837C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stitcher/Pods-Stitcher-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92AA7A1BB91FA9A663D4B2A8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stitcher/Pods-Stitcher-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD5C9DF51E5A8F01002A0525 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD5C9E041E5A8F01002A0525 /* ViewController.mm in Sources */,
+				DD5C9E011E5A8F01002A0525 /* AppDelegate.m in Sources */,
+				DD5C9E331E5A8F58002A0525 /* SRStitcher.mm in Sources */,
+				DD5C9DFE1E5A8F01002A0525 /* main.m in Sources */,
+				DD5C9E371E5A942D002A0525 /* UIImage+OpenCV.mm in Sources */,
+				DD5C9E441E5AC556002A0525 /* convertTool.mm in Sources */,
+				DD518FFA1E5BDA6500230D6C /* FileUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD5C9E0E1E5A8F01002A0525 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD5C9E171E5A8F01002A0525 /* StitcherTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD5C9E191E5A8F01002A0525 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD5C9E221E5A8F01002A0525 /* StitcherUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD5C9E141E5A8F01002A0525 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD5C9DF81E5A8F01002A0525 /* Stitcher */;
+			targetProxy = DD5C9E131E5A8F01002A0525 /* PBXContainerItemProxy */;
+		};
+		DD5C9E1F1E5A8F01002A0525 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD5C9DF81E5A8F01002A0525 /* Stitcher */;
+			targetProxy = DD5C9E1E1E5A8F01002A0525 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DD5C9E051E5A8F01002A0525 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD5C9E061E5A8F01002A0525 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DD5C9E0A1E5A8F01002A0525 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD5C9E0B1E5A8F01002A0525 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD5C9E241E5A8F01002A0525 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DD5C9E251E5A8F01002A0525 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD5C9E271E5A8F01002A0525 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B86690093F16E0B8B491E4A /* Pods-Stitcher.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Stitcher",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Stitcher/PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"HAVE_OPENCV_NONFREE=1",
+				);
+				INFOPLIST_FILE = Stitcher/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.clong.Stitcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DD5C9E281E5A8F01002A0525 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F715A87E2B78BF3A37842284 /* Pods-Stitcher.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Stitcher",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Stitcher/PrefixHeader.pch";
+				INFOPLIST_FILE = Stitcher/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.clong.Stitcher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DD5C9E2A1E5A8F01002A0525 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = StitcherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.clong.StitcherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stitcher.app/Stitcher";
+			};
+			name = Debug;
+		};
+		DD5C9E2B1E5A8F01002A0525 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = StitcherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.clong.StitcherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stitcher.app/Stitcher";
+			};
+			name = Release;
+		};
+		DD5C9E2D1E5A8F01002A0525 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = StitcherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.clong.StitcherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Stitcher;
+			};
+			name = Debug;
+		};
+		DD5C9E2E1E5A8F01002A0525 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = StitcherUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.clong.StitcherUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Stitcher;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD5C9DF41E5A8F01002A0525 /* Build configuration list for PBXProject "Stitcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD5C9E241E5A8F01002A0525 /* Debug */,
+				DD5C9E251E5A8F01002A0525 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD5C9E261E5A8F01002A0525 /* Build configuration list for PBXNativeTarget "Stitcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD5C9E271E5A8F01002A0525 /* Debug */,
+				DD5C9E281E5A8F01002A0525 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD5C9E291E5A8F01002A0525 /* Build configuration list for PBXNativeTarget "StitcherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD5C9E2A1E5A8F01002A0525 /* Debug */,
+				DD5C9E2B1E5A8F01002A0525 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD5C9E2C1E5A8F01002A0525 /* Build configuration list for PBXNativeTarget "StitcherUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD5C9E2D1E5A8F01002A0525 /* Debug */,
+				DD5C9E2E1E5A8F01002A0525 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD5C9DF11E5A8F01002A0525 /* Project object */;
+}
